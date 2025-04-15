@@ -7,6 +7,7 @@ import {
   User,
 } from 'lucide-react';
 
+import { Separator } from '@/components/ui/separator';
 import {
   Sidebar,
   SidebarContent,
@@ -18,7 +19,6 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from '@/components/ui/sidebar';
-import { Separator } from './ui/separator';
 
 // Menu items.
 const items = [

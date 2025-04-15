@@ -14,6 +14,6 @@ export const ThemeProvider = ({
   }, []);
 
   if (!mounted) return null;
-  
+
   return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
 };

@@ -5,7 +5,8 @@ import { cookies } from 'next/headers';
 import { ThemeProvider } from '@/providers/theme-provider';
 
 import { AppSidebar } from '@/components/app-sidebar';
-import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
+import Navbar from '@/components/navbar';
+import { SidebarProvider } from '@/components/ui/sidebar';
 import './globals.css';
 
 const geistSans = Geist({
@@ -45,8 +46,8 @@ export default async function RootLayout({
         >
           <SidebarProvider defaultOpen={defaultOpen}>
             <AppSidebar />
-            <main>
-              <SidebarTrigger className='m-2 hover:cursor-pointer' />
+            <main className='w-full'>
+              <Navbar />
               {children}
             </main>
           </SidebarProvider>
